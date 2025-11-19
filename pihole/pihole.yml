@@ -10,7 +10,7 @@ services:
       - "80:80/tcp"
     environment:
       TZ: 'Europe/Berlin'
-      # WEBPASSWORD: 'set a secure password here or it will be random'
+      FTLCONF_webserver_api_password: 'Password'
     volumes:
       - './etc-pihole:/etc/pihole'
       - './etc-dnsmasq.d:/etc/dnsmasq.d'
